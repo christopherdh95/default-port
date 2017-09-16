@@ -1,0 +1,6 @@
+utility
+2	defaultPortAt: transportName 
+3		"SoapServerSetup defaultPortAt: #http"
+4		| setUp |
+5		setUp := SoapServerSetupMap at: transportName.
+6		^ setUp defaultPort
